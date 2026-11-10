@@ -1,0 +1,16 @@
+services:
+  wxpush:
+    build: .
+    image: wxpush:local
+    container_name: wxpush
+    restart: unless-stopped
+    # 需要直接读取宿主机网卡的 IPv6 地址，故用 host 网络
+    network_mode: host
+    volumes:
+      - ./data:/data
+    environment:
+      - TZ=Asia/Shanghai
+      - PORT=8099
+      # 首次启动用这两个值初始化管理员；之后在页面里改，改的是 data/config.json
+      - ADMIN_USER=${ADMIN_USER:-admin}
+      - ADMIN_PASS=${ADMIN_PASS:-please-change-me}
