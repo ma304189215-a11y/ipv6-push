@@ -1,5 +1,11 @@
 # IP6 Push —— 公网 IPv6 地址变化推送
 
+<!-- series-nav -->
+> **自建服务器小工具集** · [nopass](https://github.com/ma304189215-a11y/nopass)（内网服务免密） · **ipv6-push**（IPv6 变化推送） · [wifipay](https://github.com/ma304189215-a11y/wifipay)（付费 WiFi 认证）
+>
+> 都在自己家里跑了一段时间、确实在用的东西。零第三方依赖，装完就能用。
+<!-- series-nav -->
+
 给家里/公司服务器用的小工具：**本机公网 IPv6 变了就推一条消息到手机**。
 
 带一个网页管理界面，改配置不用动文件、不用重启容器。
